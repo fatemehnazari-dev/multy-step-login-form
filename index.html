@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>multy step login form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        sing in
+      </header>
+      <div class="progrees-bar">
+        <div class="step active">
+          <span>1</span>
+          <p>name</p>
+        </div>
+        <div class="step">
+          <span>2</span>
+          <p>contact</p>
+        </div>
+        <div class="step">
+          <span>3</span>
+          <p>birth</p>
+        </div>
+        <div class="step">
+          <span>4</span>
+          <p>submit</p>
+        </div>
+      </div>
+      <form action="">
+        <div class="page">
+          <div class="title">basic info</div>
+          <div class="field">
+            <input type="text" placeholder="first name" />
+          </div>
+          <div class="field">
+            <input type="text" placeholder="last name" />
+          </div>
+          <button class="next">Next</button>
+        </div>
+        <div class="page">
+          <div class="title">Contact info</div>
+          <div class="field">
+            <input type="email" placeholder="email address" />
+          </div>
+          <div class="field">
+            <input type="tel" placeholder="phone number" />
+          </div>
+          <button class="prev">Previous</button>
+          <button class="next">Next</button>
+        </div>
+        <div class="page">
+          <div class="title">birth</div>
+          <div class="field">
+            <input type="date" />
+          </div>
+          <div class="field">
+            <select>
+              <option>male</option>
+              <option>female</option>
+              <option>prefer not to say</option>
+            </select>
+          </div>
+          <button class="prev">Previous</button>
+          <button class="next">Next</button>
+        </div>
+        <div class="page">
+          <div class="title">login details</div>
+          <div class="field">
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" />
+          </div>
+          <button class="prev">Previous</button>
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
