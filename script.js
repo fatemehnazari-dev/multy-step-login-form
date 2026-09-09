@@ -28,18 +28,18 @@ function validatePassword(password) {
   const hasNumber = /[0-9]/.test(password);
 
   if (password.length < minLength) {
-    return "رمز عبور باید حداقل ۸ کاراکتر باشد";
+    return "Password must be at least 8 characters long";
   }
   if (!hasUpperCase) {
-    return "رمز عبور باید حداقل یک حرف بزرگ داشته باشد";
+    return "Password must contain at least one uppercase letter";
   }
   if (!hasLowerCase) {
-    return "رمز عبور باید حداقل یک حرف کوچک داشته باشد";
+    return "Password must contain at least one lowercase letter";
   }
   if (!hasNumber) {
-    return "رمز عبور باید حداقل یک عدد داشته باشد";
+    return "Password must contain at least one number";
   }
-  return null; // یعنی معتبره
+  return null;
 }
 
 function validateFields(step) {
